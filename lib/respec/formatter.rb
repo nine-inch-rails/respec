@@ -14,7 +14,7 @@ module Respec
       end
 
       def start_dump
-        open(Respec.failures_path, 'w') do |file|
+        open(Respec.failures_path, 'a') do |file|
           @failed_examples.each do |example|
             file.puts example.metadata[:full_description]
           end
@@ -35,7 +35,7 @@ module Respec
       end
 
       def start_dump(notification)
-        open(Respec.failures_path, 'w') do |file|
+        open(Respec.failures_path, 'a') do |file|
           @respec_failures.each do |failure|
             file.puts failure
           end
