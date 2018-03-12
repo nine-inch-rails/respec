@@ -1,3 +1,5 @@
+### DEPRECATED ###
+Please don't use this. We shouldn't have used it to begin with tbh
 ## Respec
 
 Provides a command, `respec`, which wraps `rspec`, and records your
